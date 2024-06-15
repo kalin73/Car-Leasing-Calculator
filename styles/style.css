@@ -83,7 +83,7 @@ h1, h2 {
 
 @media screen and (max-width: 390px) {
     .container {
-        max-height: 700px;
+        max-height: 680px;
     }
 
     form .details .input-field {
@@ -103,18 +103,12 @@ h1, h2 {
 
     #lease_id {
         order: 3;
-        margin-top: -1px;
+        margin-top: -4px;
     }
 
     #down_payment_id {
         order: 4;
-    }
-
-    h1 {
-        font-size: 25px;
-    }
-    h2 {
-        font-size: 21px;
+        margin-top: 5px;
     }
 
     #separator {
@@ -127,7 +121,7 @@ h1, h2 {
     }
 
     #d_payment, #c_value {
-        margin-top: 25px;
+        margin-top: 19px;
         margin-bottom: 10px;
         accent-color: #0C74FD;
     }
@@ -140,7 +134,20 @@ h1, h2 {
         margin-bottom: 10px;
     }
 
+    /* Font resizing */
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
     p {
+        font-size: 15px;
+    }
+
+    label {
         font-size: 15px;
     }
 }
