@@ -67,8 +67,8 @@ h1, h2 {
     accent-color: #0C74FD;
 }
 
-#total_cost, #monthly_installment{
-    margin-bottom:10px;
+#total_cost, #monthly_installment {
+    margin-bottom: 10px;
 }
 
 .results {
@@ -81,20 +81,43 @@ h1, h2 {
     align-content: center;
 }
 
-@media screen and (max-width: 390px){
-    .container{
+@media screen and (max-width: 390px) {
+    .container {
         max-height: 700px;
     }
+
     form .details .input-field {
         width: 100%;
         margin: 15px auto;
     }
 
-    h1{
-        font-size: 25px;
+    #car_type_id {
+        order: 1;
+        margin-top: 20px;
     }
 
-    #separator{
+    #car_value_id {
+        order: 2;
+        margin-top: 5px;
+    }
+
+    #lease_id {
+        order: 3;
+        margin-top: -1px;
+    }
+
+    #down_payment_id {
+        order: 4;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 21px;
+    }
+
+    #separator {
         visibility: hidden;
     }
 
@@ -109,14 +132,15 @@ h1, h2 {
         accent-color: #0C74FD;
     }
 
-    #total_cost, #monthly_installment{
-        margin-bottom:2px;
+    #total_cost, #monthly_installment {
+        margin-bottom: 2px;
     }
 
-    .r1{
+    .r1 {
         margin-bottom: 10px;
     }
-    p{
+
+    p {
         font-size: 15px;
     }
 }
