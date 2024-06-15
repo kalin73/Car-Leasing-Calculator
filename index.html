@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class="container">
+    <form class="form_container">
+
+        <h1 id="form-title">Car Leasing Calculator</h1>
+
+        <div class="details">
+            <div class="input-field">
+                <label for="car_type">Car Type:</label><br>
+                <select id="car_type">
+                    <option value="Brand New">Brand New</option>
+                    <option value="Used">Used</option>
+                </select><br>
+            </div>
+
+            <div class="input-field">
+                <label for="car_value">Car Value (€10,000 - €200,000):</label><br>
+                <input id="car_value" type="text" value="10000"><br>
+                <input id="c_value" type="range" min="10000" max="200000" value="10000">
+            </div>
+            <div class="input-field">
+                <label for="lease">Lease Period (months):</label><br>
+                <select id="lease">
+                    <option value="12">12</option>
+                    <option value="24">24</option>
+                    <option value="36">36</option>
+                    <option value="48">48</option>
+                    <option value="60">60</option>
+                </select><br>
+            </div>
+
+            <div class="input-field">
+                <label for="down_payment">Down Payment (10% - 50%):</label><br>
+                <input id="down_payment" type="text" value="10"><br>
+                <input id="d_payment" type="range" min="10" max="50" value="10" step="5">
+            </div>
+        </div>
+        <hr>
+    </form>
+
+    <h2 id="title2">Leasing Details</h2>  <!-- todo change id-->
+    <div class="results">
+        <div class="r1">
+            <p id="total_cost"></p>
+            <p id="down_payment_cost"></p>
+
+        </div>
+        <hr id="separator">
+        <div class="r2">
+            <p id="monthly_installment"></p>
+            <p id="interest_rate"></p>
+        </div>
+    </div>
+</div>
+
+<script src="scripts/script.js"></script>
+</body>
+
+</html>
