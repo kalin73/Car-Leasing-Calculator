@@ -85,7 +85,7 @@ form .details .input-field {
     align-content: center;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 480px) {
     .container {
         max-height: 680px;
     }
