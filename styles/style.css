@@ -57,13 +57,13 @@ h1, h2 {
 }
 
 #title2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
 
 #d_payment, #c_value {
-    margin-top: 25px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
     accent-color: #0C74FD;
 }
 
@@ -84,6 +84,11 @@ h1, h2 {
 @media screen and (max-width: 390px) {
     .container {
         max-height: 680px;
+    }
+
+    #title2 {
+        margin-top: 18px;
+        margin-bottom: 22px;
     }
 
     form .details .input-field {

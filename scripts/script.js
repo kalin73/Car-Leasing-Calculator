@@ -16,24 +16,26 @@ const interestRateCostField = document.getElementById("interest_rate");
 
 calculateLeasingDetails();
 
-const formContainer = document.getElementById("form_container");
+const formContainer = document.getElementsByClassName("form_container")[0];
 refresh();
 
 function refresh() {
-    formContainer.addEventListener("click", e => {
-        e.preventDefault();
+    formContainer.addEventListener("input", event => {
+        event.preventDefault();
         calculateLeasingDetails();
+        console.log("Event!");
     });
 }
 
 function carValue() {
     carValueSlider.addEventListener("input", e => {
-        e.preventDefault();
         carValueTxtField.value = carValueSlider.value;
         calculateLeasingDetails();
     });
+
     carValueTxtField.addEventListener("input", e => {
-        e.preventDefault();
+        const value = carValueSlider.value;
+
         carValueSlider.value = carValueTxtField.value;
         calculateLeasingDetails();
     });
@@ -41,7 +43,6 @@ function carValue() {
 
 function downPayment() {
     downPaymentSlider.addEventListener("input", e => {
-        e.preventDefault();
         downPaymentTxtField.value = downPaymentSlider.value;
         calculateLeasingDetails()
     });
