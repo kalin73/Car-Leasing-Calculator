@@ -37,7 +37,7 @@ h1, h2 {
 .container form .details {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 form .details .input-field {
