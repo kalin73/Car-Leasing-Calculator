@@ -19,6 +19,10 @@ label {
     margin-bottom: 200px;
 }
 
+h1, h2 {
+    text-align: center;
+}
+
 .container {
     background-color: #fff;
     max-width: 650px;
@@ -33,8 +37,7 @@ label {
 .container form .details {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
+    justify-content: center;
 }
 
 form .details .input-field {
@@ -49,12 +52,12 @@ form .details .input-field {
     border-radius: 4px;
 }
 
-#car_type {
-    margin-right: 10%;
+#car_type, #car_value, #lease, #down_payment {
+    margin-top: 5px;
 }
 
-h1, h2 {
-    text-align: center;
+#car_type {
+    margin-right: 10%;
 }
 
 #title2 {
@@ -68,14 +71,14 @@ h1, h2 {
     accent-color: #0C74FD;
 }
 
-#total_cost, #monthly_installment {
-    margin-bottom: 10px;
-}
-
 .results {
     display: flex;
     justify-content: space-between;
     margin-right: 25px;
+}
+
+#total_cost, #monthly_installment {
+    margin-bottom: 10px;
 }
 
 #separator {
